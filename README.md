@@ -18,4 +18,4 @@
 
 定義欄位時間戳相同時的決勝規則，並以批次讀寫、失敗重試與配額監控控制 Apps Script 執行量。
 
-English: A Google Sheets and Apps Script workflow for field-level change tracking and synchronization.
+**English:** A Google Sheets and Apps Script workflow for field-level change tracking and synchronization.
