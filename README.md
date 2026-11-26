@@ -10,7 +10,7 @@
 
 員工範本建立分表；共用 LWW Library 透過安裝型 `onEdit` trigger 記錄編輯時間；主控腳本建立分表並執行同步。
 
-## 流程圖
+## 架構與流程
 
 ![分表建立與資料同步流程](docs/assets/workflow.svg)
 
