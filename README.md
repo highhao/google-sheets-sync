@@ -12,7 +12,3 @@ Google Sheets、Google Apps Script（JavaScript）。
 2. 安裝型 `onEdit` trigger 記錄欄位更新時間。
 3. 共用 Library 依欄位最後更新時間判定最新值。
 4. 主控腳本將變更同步回主資料表。
-
-## English
-
-A Google Sheets and Apps Script workflow for field-level change tracking and synchronization.
