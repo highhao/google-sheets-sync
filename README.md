@@ -1,13 +1,18 @@
 # 試算表專案追蹤同步
 
-**技術：** Google Sheets、Google Apps Script（JavaScript）。
+使用員工分表協作更新資料，再將欄位變更同步回主資料表。
 
-```mermaid
-flowchart LR
-    Setup[建立員工分表] --> Edit[編輯資料欄位]
-    Edit --> Trigger[記錄欄位更新時間]
-    Trigger --> Sync[比較時間並同步]
-    Sync --> Master[主資料表]
-```
+## 技術
 
-English: A Google Sheets and Apps Script workflow for field-level change tracking and synchronization.
+Google Sheets、Google Apps Script（JavaScript）。
+
+## 同步流程
+
+1. 主控腳本建立員工工作表。
+2. 安裝型 `onEdit` trigger 記錄欄位更新時間。
+3. 共用 Library 依欄位最後更新時間判定最新值。
+4. 主控腳本將變更同步回主資料表。
+
+## English
+
+A Google Sheets and Apps Script workflow for field-level change tracking and synchronization.
