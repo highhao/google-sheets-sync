@@ -2,20 +2,12 @@
 
 **技術：** Google Sheets、Google Apps Script（JavaScript）。
 
-## 專案情境
+```mermaid
+flowchart LR
+    Setup[建立員工分表] --> Edit[編輯資料欄位]
+    Edit --> Trigger[記錄欄位更新時間]
+    Trigger --> Sync[比較時間並同步]
+    Sync --> Master[主資料表]
+```
 
-員工分別更新工作表後，主控流程依欄位級最後更新時間將資料同步回主資料。
-
-## 架構摘要
-
-員工範本建立分表；共用 LWW Library 透過安裝型 `onEdit` trigger 記錄編輯時間；主控腳本建立分表並執行同步。
-
-## 架構與流程
-
-![分表建立與資料同步流程](docs/assets/workflow.svg)
-
-## 後續優化建議
-
-定義欄位時間戳相同時的決勝規則，並以批次讀寫、失敗重試與配額監控控制 Apps Script 執行量。
-
-**English:** A Google Sheets and Apps Script workflow for field-level change tracking and synchronization.
+English: A Google Sheets and Apps Script workflow for field-level change tracking and synchronization.
